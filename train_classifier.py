@@ -165,7 +165,7 @@ def build_model():
     verbose = True, steps = [('vect', CountVectorizer(tokenizer = tokenize)),
                              ('tfidf', TfidfTransformer()),
             ('clf', MultiOutputClassifier(estimator = DecisionTreeClassifier
-               (max_depth=7, min_samples_leaf=1, class_weight = "balanced")))])
+               (max_depth=7, min_samples_leaf=1, class_weight = "balanced", random_state = 42)))])
 
     return model
 
