@@ -57,7 +57,9 @@ Firstly - it is important to get know with categories occurences within the trai
 ![image](https://user-images.githubusercontent.com/64994740/139306599-707b4dbc-6852-4388-a074-b23e834a3f09.png)
 
 
- 
+After this short glance please type the message you want to classify. The machine learning algorithm will output the reference categories. Below the example output:
+![image](https://user-images.githubusercontent.com/64994740/139308951-71eef84b-6bb1-412a-951d-4ac8e8a0f966.png)
+
 
 
 
