@@ -9,8 +9,7 @@ contains files used to deploy the final application to the web app provider `Her
 ***If you want to run the application locally please download the zip file of commit `9b8f917319e847b411a09053181f23134ac15ae4.` 
 The link to the commit:
 https://github.com/JacekNiedzielski/Distaster_Response_Pipeline/tree/9b8f917319e847b411a09053181f23134ac15ae4
-
-Then proceed with chapter ...***
+Then proceed with chapter `Required libraries and local installation instructions`***
 
 #### The aim of this project is to provide a predictive tool beeing able to classify the real world messages (just like these posted on social media or provided in news) into disaster categories. Such a tool could potentially function as a core part of more sophisticated concept, where the application automatically informs appropriate services about the particular disaster event/events.
 
@@ -49,5 +48,18 @@ After you will have your libraries installed, you will need to perform the follo
 4. Type the following commands to execute model's training (ML Pipeline): `python train_classifier.py disaster_database.db class.pkl´
 5. Type the following command to run the application:                     `python run.py´
 6. Type localhost:3001 in the omnibox of your browser
+
+
+### How to use the app? 
+
+Firstly - it is important to get know with categories occurences within the training data set. As I mentioned before - I had tried to balance the classes, but still one can assumme lower peformance when trying to classify messages refering to the topics which occured very seldom. Please compare the picture below:
+
+![image](https://user-images.githubusercontent.com/64994740/139306599-707b4dbc-6852-4388-a074-b23e834a3f09.png)
+
+
+ 
+
+
+
 
 
