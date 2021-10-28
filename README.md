@@ -1,4 +1,4 @@
-# Distaster Response Classification App
+# Disaster Response Classification App
 
 ### Udacity Data Pipelines Course
 The following project was performed in the course of one of required submissions during the Udacity Data Scientist Nanodegree Programm.
