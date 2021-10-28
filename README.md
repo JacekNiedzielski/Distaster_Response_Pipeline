@@ -65,7 +65,7 @@ After this short glance please type the message you want to classify. The machin
 
 ### Acknowledgements
 
-Figure8 - data set
+Figure8 - data set <br/>
 Udacity - templates and mentoring
 
 
