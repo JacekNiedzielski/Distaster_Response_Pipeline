@@ -26,7 +26,7 @@ from nltk.corpus import stopwords
 from sklearn.pipeline import Pipeline
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.multioutput import MultiOutputClassifier
 from sklearn.metrics import classification_report
 
@@ -211,6 +211,15 @@ def build_model():
             ('clf', MultiOutputClassifier(estimator = DecisionTreeClassifier
                (max_depth=7, min_samples_leaf=1, class_weight = "balanced", random_state = 42)))])
 
+
+    #Parameters tuning via Grid Search
+    
+    parameters = {
+    'clf__estimator__criterion': ["gini", "entropy"]    
+}
+    
+    model = GridSearchCV(model, param_grid = parameters)
+    
     return model
 
 
